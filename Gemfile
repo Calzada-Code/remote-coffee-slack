@@ -4,6 +4,14 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", "~> 12.0"
-gem "minitest", "~> 5.0"
-gem "pry"
-gem 'dotenv', "~> 2.7.6"
+
+group :test do
+  gem "minitest", "~> 5.0"
+  gem 'vcr'
+  gem 'webmock'
+end
+
+group :test, :development do
+  gem "pry"
+  gem 'dotenv', "~> 2.7.6"
+end
