@@ -6,7 +6,10 @@ module RemoteCoffeeSlack
     end
 
     def perform
-      client.chat_postMessage(channel: '#general', text: next_session_message, as_user: true)
+      client.chat_postMessage(
+        channel: RemoteCoffeeSlack.config.slack_channel,
+        text: next_session_message,
+        as_user: true)
     end
 
     def self.perform(client, coffee_mates)

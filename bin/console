@@ -6,6 +6,7 @@ require "remote_coffee_slack"
 
 RemoteCoffeeSlack.configure do |config|
   config.slack_bot_token = ENV['SLACK_BOT_TOKEN']
+  config.slack_channel = ENV['SLACK_CHANNEL']
 end
 
  require "pry"
