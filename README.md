@@ -1,8 +1,10 @@
 # RemoteCoffeeSlack
+![CI](https://github.com/Calzada-Code/remote-coffee-slack/workflows/CI/badge.svg)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/remote_coffee_slack`. To experiment with that code, run `bin/console` for an interactive prompt.
+A Ruby gem that helps you to create groups for a remote coffee in your Slack organization.
 
-TODO: Delete this and the text above, and describe your gem
+![remote-cofee-slack](./remote-coffee-slack.png)
+
 
 ## Installation
 
@@ -20,9 +22,31 @@ Or install it yourself as:
 
     $ gem install remote_coffee_slack
 
+
 ## Usage
 
-TODO: Write usage instructions here
+Create a new slack app in your slack workspace and add the following Bot Token Scopes:
+`channels:read `, `chat:write`, `users:read`
+
+Initalize the gem adding the following block:
+
+```ruby
+RemoteCoffeeSlack.configure do |config|
+  config.slack_bot_token = your-Bot-User-OAuth-Access-Token
+  config.slack_channel = the-slack-channel-what-you-will-take-as-water-cooler
+end
+```
+
+In your Ruby application where you want to trigger the `RemoteCoffeeSlack` pairing event you should call
+
+```ruby
+RemoteCoffeeSlack.notify_next_session
+```
+
+This will action will perform the following steps:
+- Get the users inside the configured channel.
+- Create the groups for the next coffee session.
+- Publish the list in the confifured channel.
 
 ## Development
 
@@ -32,7 +56,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/remote_coffee_slack. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/remote_coffee_slack/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/remote_coffee_slack. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Calzada-Code/remote-coffee-slack/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -41,4 +65,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the RemoteCoffeeSlack project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/remote_coffee_slack/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the RemoteCoffeeSlack project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Calzada-Code/remote-coffee-slack/blob/master/CODE_OF_CONDUCT.md).
