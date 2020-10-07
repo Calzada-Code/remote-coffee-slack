@@ -28,6 +28,6 @@ module RemoteCoffeeSlack
   end
 
   class Configuration
-    attr_accessor :slack_bot_token, :slack_channel
+    attr_accessor :slack_bot_token, :slack_channel, :members_per_group
   end
 end

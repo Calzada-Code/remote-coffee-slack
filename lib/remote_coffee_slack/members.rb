@@ -12,7 +12,7 @@ module RemoteCoffeeSlack
     end
 
     def select_coffee_mates
-      members_handlers.shuffle.each_slice(MATES_PER_GROUP).to_a
+      members_handlers.shuffle.each_slice(members_per_group).to_a
     end
 
     private
@@ -45,6 +45,10 @@ module RemoteCoffeeSlack
     members.reject do |member|
       client.users_info(user: member).user.is_bot
     end
+    end
+
+    def members_per_group
+      RemoteCoffeeSlack.config.members_per_group || MATES_PER_GROUP
     end
   end
 end
