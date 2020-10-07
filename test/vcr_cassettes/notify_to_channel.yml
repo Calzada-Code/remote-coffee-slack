@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: as_user=true&channel=%23general&text=++++++The+mates+for+the+next+coffee+session+are%3A%0A++++++%3C%40foo%3E+and+%3C%40bar%3E%0A%3C%40baz%3E+and+%3C%40test%3E%0A%0A&token=xoxb-1428936141472-1390388236311-ivcPKrzo0Vb5zUe9H5QsULFU
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Slack Ruby Client/0.15.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 07 Oct 2020 03:44:48 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - c1988abbd2253188510f6249c47a32ee
+      X-Oauth-Scopes:
+      - chat:write,users.profile:read,users:read,channels:read
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '380'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Via:
+      - haproxy-www-q86a,haproxy-edge-iad-8zmh
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"C01C9M8GVBK","ts":"1602042288.000100","message":{"bot_id":"B01BX9VFP6X","type":"message","text":"      The
+        mates for the next coffee session are:\n      <@foo> and <@bar>\n<@baz> and
+        <@test>\n\n","user":"U01BGBE6Y95","ts":"1602042288.000100","team":"T01CLTJ45DW","bot_profile":{"id":"B01BX9VFP6X","deleted":false,"name":"remote-coffee","updated":1601754872,"app_id":"A01BGAMLFQX","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"T01CLTJ45DW"}}}'
+  recorded_at: Wed, 07 Oct 2020 03:44:48 GMT
+recorded_with: VCR 6.0.0
