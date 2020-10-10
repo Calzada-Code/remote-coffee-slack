@@ -30,8 +30,7 @@ module RemoteCoffeeSlack
   class Configuration
     DEFAULT_SLACK_CHANNEL = '#general'.freeze
 
-    attr_accessor :slack_bot_token, :members_per_group
-    attr_writer :slack_channel
+    attr_accessor :slack_bot_token, :slack_channel, :members_per_group
 
     def slack_channel
       @slack_channel || DEFAULT_SLACK_CHANNEL
