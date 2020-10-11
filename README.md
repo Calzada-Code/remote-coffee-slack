@@ -33,7 +33,7 @@ Initalize the gem adding the following block:
 ```ruby
 RemoteCoffeeSlack.configure do |config|
   config.slack_bot_token = your-Bot-User-OAuth-Access-Token
-  config.slack_channel = the-slack-channel-what-you-will-take-as-water-cooler
+  config.slack_channel = the-slack-channel-what-you-will-take-as-water-cooler # optional (default value is #general)
   config.members_per_group = members-per-group # optional (default value is 2)
 end
 ```
