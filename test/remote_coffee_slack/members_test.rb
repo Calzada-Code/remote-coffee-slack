@@ -1,6 +1,6 @@
 require "test_helper"
 
-class RemoteCoffeeSlack::MembersTest  < Minitest::Test
+class RemoteCoffeeSlack::MembersTest < Minitest::Test
   def setup
     @client = RemoteCoffeeSlack::SlackClient.new.client
   end
@@ -17,6 +17,7 @@ class RemoteCoffeeSlack::MembersTest  < Minitest::Test
       RemoteCoffeeSlack.config.members_per_group = 4
       coffee_mates = RemoteCoffeeSlack::Members.select_coffee_mates(@client)
       assert_equal 1, coffee_mates.count
+      RemoteCoffeeSlack.config.members_per_group = nil
     end
   end
 end
