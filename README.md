@@ -26,7 +26,7 @@ Or install it yourself as:
 ## Usage
 
 Create a new slack app in your slack workspace and add the following Bot Token Scopes:
-`channels:read `, `chat:write`, `users:read`
+`channels:read `, `chat:write`, `users:read`, `im:write`, `mpim:write`
 
 Initalize the gem adding the following block:
 
@@ -43,11 +43,21 @@ In your Ruby application where you want to trigger the `RemoteCoffeeSlack` pairi
 ```ruby
 RemoteCoffeeSlack.notify_next_session
 ```
-
-This will action will perform the following steps:
+This action will perform the following steps:
 - Get the users inside the configured channel.
 - Create the groups for the next coffee session.
 - Publish the list in the confifured channel.
+
+You can notify via DM using
+
+```ruby
+RemoteCoffeeSlack.notify_next_session_via_dm
+```
+
+This action will perform the following steps:
+- Get the users inside the configured channel.
+- Get th channel_ids for th DMs.
+- Publish the message via direct message.
 
 ## Development
 

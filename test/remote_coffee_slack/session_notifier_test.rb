@@ -1,6 +1,6 @@
 require "test_helper"
 
-class RemoteCoffeeSlack::SessionNotifierTest  < Minitest::Test
+class RemoteCoffeeSlack::SessionNotifierTest < Minitest::Test
   def setup
     @client = RemoteCoffeeSlack::SlackClient.new.client
   end
