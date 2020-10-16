@@ -3,6 +3,7 @@ require "remote_coffee_slack/version"
 require "remote_coffee_slack/slack_client"
 require "remote_coffee_slack/members"
 require "remote_coffee_slack/session_notifier"
+require "remote_coffee_slack/session_direct_message_notifier"
 
 module RemoteCoffeeSlack
   class << self
@@ -25,6 +26,10 @@ module RemoteCoffeeSlack
 
   def self.notify_next_session
     SessionNotifier.perform(slack_client, select_coffee_mates)
+  end
+
+  def self.notify_next_session_via_dm
+    SessionDirectMessageNotifier.perform(slack_client, select_coffee_mates)
   end
 
   class Configuration

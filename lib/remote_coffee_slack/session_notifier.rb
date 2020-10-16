@@ -29,7 +29,7 @@ module RemoteCoffeeSlack
 
     def coffee_mates_formated
       coffee_mates.map do |mates|
-        "<#{mates.first}> and <#{mates.last}>\n"
+        "<@#{mates.first}> and <@#{mates.last}>\n"
       end.join
     end
   end

@@ -12,7 +12,7 @@ module RemoteCoffeeSlack
     end
 
     def select_coffee_mates
-      members_handlers.shuffle.each_slice(members_per_group).to_a
+      human_members.shuffle.each_slice(members_per_group).to_a
     end
 
     private
@@ -33,12 +33,6 @@ module RemoteCoffeeSlack
       end
 
       channel_members
-    end
-
-    def members_handlers
-      human_members.map do |member|
-        "@#{member}"
-      end
     end
 
     def human_members

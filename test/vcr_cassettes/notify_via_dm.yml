@@ -1,0 +1,269 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/conversations.open
+    body:
+      encoding: UTF-8
+      string: token=test&users=U01CAG57LHF%2CU01BUQEUERK
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Slack Ruby Client/0.15.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 13 Oct 2020 04:08:58 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 95caeca1203eb2bf0ff536caa3015a16
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read,im:write,mpim:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - channels:write,groups:write,mpim:write,im:write,post
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '380'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Via:
+      - haproxy-www-iq7l,haproxy-edge-pdx-asyg
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":{"id":"G01C9617ZK8","name":"mpdm-remotecoffee--lisa--maggie-1","is_channel":false,"is_group":true,"is_im":false,"created":1602560970,"is_archived":false,"is_general":false,"unlinked":0,"name_normalized":"mpdm-remotecoffee--lisa--maggie-1","is_shared":false,"parent_conversation":null,"creator":"U01CTJ6J85N","is_ext_shared":false,"is_org_shared":false,"shared_team_ids":["T01CLTJ45DW"],"pending_shared":[],"pending_connected_team_ids":[],"is_pending_ext_shared":false,"is_member":true,"is_private":true,"is_mpim":true,"last_read":"0000000000.000000","is_open":true,"topic":{"value":"Group
+        messaging","creator":"U01CTJ6J85N","last_set":1602560970},"purpose":{"value":"Group
+        messaging with: @remotecoffee @lisa @maggie","creator":"U01CTJ6J85N","last_set":1602560970},"priority":0}}'
+  recorded_at: Tue, 13 Oct 2020 04:08:58 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/conversations.open
+    body:
+      encoding: UTF-8
+      string: token=test&users=U01BU05V213%2CU01BQAND5N2
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Slack Ruby Client/0.15.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 13 Oct 2020 04:08:59 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 00a4607a8bdb0d35c288bc576a6b0a24
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read,im:write,mpim:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - channels:write,groups:write,mpim:write,im:write,post
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '386'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Via:
+      - haproxy-www-82hb,haproxy-edge-pdx-636g
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":{"id":"G01C9618MTQ","name":"mpdm-remotecoffee--bart--homer.simpson-1","is_channel":false,"is_group":true,"is_im":false,"created":1602560972,"is_archived":false,"is_general":false,"unlinked":0,"name_normalized":"mpdm-remotecoffee--bart--homer.simpson-1","is_shared":false,"parent_conversation":null,"creator":"U01CTJ6J85N","is_ext_shared":false,"is_org_shared":false,"shared_team_ids":["T01CLTJ45DW"],"pending_shared":[],"pending_connected_team_ids":[],"is_pending_ext_shared":false,"is_member":true,"is_private":true,"is_mpim":true,"last_read":"0000000000.000000","is_open":true,"topic":{"value":"Group
+        messaging","creator":"U01CTJ6J85N","last_set":1602560972},"purpose":{"value":"Group
+        messaging with: @remotecoffee @bart @homer.simpson","creator":"U01CTJ6J85N","last_set":1602560972},"priority":0}}'
+  recorded_at: Tue, 13 Oct 2020 04:08:59 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: as_user=true&channel=G01C9617ZK8&text=++++++Hello%21+you+have+been+selected+for+the+next+remote+coffee+session.%0A&token=test
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Slack Ruby Client/0.15.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 13 Oct 2020 04:08:59 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 57d9fa4d8f0cf3decce4eb2461057d2c
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read,im:write,mpim:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '365'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Via:
+      - haproxy-www-br1x,haproxy-edge-pdx-sjse
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"G01C9617ZK8","ts":"1602562139.000100","message":{"bot_id":"B01CGBX4B41","type":"message","text":"      Hello!
+        you have been selected for the next remote coffee session.\n","user":"U01CTJ6J85N","ts":"1602562139.000100","team":"T01CLTJ45DW","bot_profile":{"id":"B01CGBX4B41","deleted":false,"name":"remote-coffee","updated":1602046226,"app_id":"A01C9TC3PQU","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"T01CLTJ45DW"}}}'
+  recorded_at: Tue, 13 Oct 2020 04:08:59 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: as_user=true&channel=G01C9618MTQ&text=++++++Hello%21+you+have+been+selected+for+the+next+remote+coffee+session.%0A&token=test
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Slack Ruby Client/0.15.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 13 Oct 2020 04:09:00 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 1b0182b3fb0fe2ff4c6c3946bcc65bd4
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read,im:write,mpim:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '365'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Via:
+      - haproxy-www-yfar,haproxy-edge-pdx-rgh8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"G01C9618MTQ","ts":"1602562140.000700","message":{"bot_id":"B01CGBX4B41","type":"message","text":"      Hello!
+        you have been selected for the next remote coffee session.\n","user":"U01CTJ6J85N","ts":"1602562140.000700","team":"T01CLTJ45DW","bot_profile":{"id":"B01CGBX4B41","deleted":false,"name":"remote-coffee","updated":1602046226,"app_id":"A01C9TC3PQU","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"T01CLTJ45DW"}}}'
+  recorded_at: Tue, 13 Oct 2020 04:09:00 GMT
+recorded_with: VCR 6.0.0
